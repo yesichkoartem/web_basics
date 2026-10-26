@@ -1,0 +1,25 @@
+/* Загальні стилі сторінки */
+body {
+    background-color: black;
+    color: red;
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+a {
+    color: darkcyan;
+}
+
+a:hover {
+    color: peru;
+}
