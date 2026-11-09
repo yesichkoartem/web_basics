@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+  </head>
+  <body>
+
+<h1>Моя перша HTML-форма</h1>
+
+
+<form action="https://httpbin.org/get" method="GET">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name">
+
+  <br><br>
+  
+   <label for="birthdate">Дата народження:</label>
+    <input type="date" id="birthdate" name="birthdate">
+
+    <br><br>
+
+    <label for="email">Імейл:</label>
+    <input type="email" id="email" name="email">
+
+    <br><br>
+
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" name="message"></textarea>
+
+  <br><br>
+  
+  <h3>Ваші улюблені напої?</h3>
+  
+  <label>
+      <input type="checkbox" name="drinks" value="tea">
+      Чай
+  </label><br>
+  
+  <label>
+      <input type="checkbox" name="drinks" value="coffee">
+      Кава
+  </label><br>
+  
+  <label>
+      <input type="checkbox" name="drinks" value="juice">
+      Сік
+  </label><br>
+  
+  <label>
+      <input type="checkbox" name="drinks" value="water">
+      Вода
+  </label><br>
+
+  <h3>Моя національність</h3>
+
+<label>
+    <input type="radio" name="nationality" value="ukrainian">
+    Українець
+</label><br>
+
+<label>
+    <input type="radio" name="nationality" value="polish">
+    Поляк
+</label><br>
+
+<label>
+    <input type="radio" name="nationality" value="german">
+    Німець
+</label><br><br>
+  
+    <button type="submit">Відправити</button>
+    <button type="reset">Очистити</button>
+  
+    <h2>Адаптивне зображення</h2>
+  
+  <picture>
+      <source
+          media="(max-width: 467px)"
+          srcset="https://picsum.photos/id/237/300/500">
+  
+      <img
+          src="https://picsum.photos/seed/picsum/1000/400"
+          alt="Адаптивне зображення"
+          style="max-width: 100%; height: auto;">
+  </picture>
+    
+  </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
